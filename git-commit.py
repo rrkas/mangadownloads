@@ -8,7 +8,7 @@ os.system(
     + "git push origin main",
 )
 
-exit()
+# exit()
 
 errors = {}
 for fp in tqdm(sorted(pathlib.Path(".").glob("**/*.json"))):
