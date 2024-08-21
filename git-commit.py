@@ -41,7 +41,7 @@ for dir_path in sorted(glob.glob("./m*/*/imgs/*/")):
         + f'git commit -m "Updated: {dir_path.lstrip("./")}" && '
         + "git push origin main",
     )
-    # os.system(f"sudo rm -rf {dir_path}")
+    os.system(f"sudo rm -rf {dir_path}")
 
 os.system(
     "git add *.py .gitignore && "
