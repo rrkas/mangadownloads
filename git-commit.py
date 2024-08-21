@@ -2,6 +2,8 @@ import glob, os
 from tqdm import tqdm
 import pathlib, json
 
+# os.system(f"git gc && sudo rm -rf .git/gc.log")
+
 os.system(
     "git add *.py .gitignore && "
     + 'git commit -m "regular update: flushing" && '
@@ -23,6 +25,7 @@ if len(errors) > 0:
 
     exit()
 
+exit()
 
 os.system(
     "git add **/*.json && "
