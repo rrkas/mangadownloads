@@ -25,7 +25,7 @@ if len(errors) > 0:
 
     exit()
 
-exit()
+# exit()
 
 os.system(
     "git add **/*.json && "
