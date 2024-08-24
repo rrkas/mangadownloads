@@ -27,6 +27,8 @@ if len(errors) > 0:
 
 # exit()
 
+os.system("python rclone-sync.py")
+
 os.system(
     "git add **/*.json && "
     + 'git commit -m "json updates" && '
